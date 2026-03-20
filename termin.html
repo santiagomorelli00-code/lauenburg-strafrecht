@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termin vereinbaren – Rechtsanwalt Hamburg | Lauenburg &amp; Kollegen</title>
+  <meta name="description" content="Vereinbaren Sie jetzt Ihren Termin bei Lauenburg & Kollegen in Hamburg. Wir antworten in der Regel noch am selben Tag.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE HERO
+═══════════════════════════════════════════════════════════════ -->
+<section class="page-hero page-hero--navy grain">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="img/video-hamburg.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="page-hero__content">
+      <p class="section-label mb-6" data-animate>Kontakt &amp; Erstberatung</p>
+      <span class="gold-rule mb-8" data-animate data-delay="1"></span>
+      <h1 data-animate data-delay="2">Termin vereinbaren</h1>
+      <p data-animate data-delay="3" style="font-size:1.05rem;color:rgba(255,255,255,.7);max-width:40rem;line-height:1.85;margin-top:1.5rem">
+        Schildern Sie uns kurz Ihr Anliegen – wir melden uns in der Regel noch am selben Werktag. Alle Angaben unterliegen dem Anwaltsgeheimnis und werden streng vertraulich behandelt.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     KONTAKT FORMULAR + INFO
+═══════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 400px;gap:5rem;align-items:start">
+
+      <!-- LEFT: CONTACT FORM -->
+      <div data-animate>
+        <div class="gold-rule"></div>
+        <p class="section-label" style="margin-bottom:.5rem">Terminanfrage</p>
+        <h2 style="font-size:clamp(1.75rem,3vw,2.5rem);color:var(--navy);margin-bottom:2.5rem">Schreiben Sie uns</h2>
+
+        <form class="contact-form form--light" action="#" method="post" novalidate>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="form-group">
+              <label class="form-label" for="vorname">Vorname <span aria-hidden="true">*</span></label>
+              <input class="form-input" type="text" id="vorname" name="vorname" autocomplete="given-name" required placeholder="Max">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachname">Nachname <span aria-hidden="true">*</span></label>
+              <input class="form-input" type="text" id="nachname" name="nachname" autocomplete="family-name" required placeholder="Mustermann">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="telefon">Telefonnummer</label>
+            <input class="form-input" type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="+49 40 ...">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" autocomplete="email" required placeholder="max@beispiel.de">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="rechtsgebiet">Rechtsgebiet <span aria-hidden="true">*</span></label>
+            <select class="form-select" id="rechtsgebiet" name="rechtsgebiet" required>
+              <option value="" disabled selected>Bitte wählen …</option>
+              <optgroup label="Strafrecht">
+                <option value="strafrecht-allgemein">Strafrecht / Strafverteidigung (allgemein)</option>
+                <option value="wirtschaftsstrafrecht">Wirtschaftsstrafrecht</option>
+                <option value="vorladung">Vorladung durch Polizei / Staatsanwaltschaft</option>
+                <option value="durchsuchung">Hausdurchsuchung</option>
+                <option value="verhaftung">Festnahme / Verhaftung</option>
+              </optgroup>
+              <optgroup label="Familienrecht">
+                <option value="scheidung">Familienrecht / Scheidung</option>
+                <option value="sorgerecht">Familienrecht / Sorgerecht &amp; Umgang</option>
+              </optgroup>
+              <option value="zivilrecht">Zivilrecht</option>
+              <option value="andere">Andere / Nicht sicher</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nachricht">Ihr Anliegen <span aria-hidden="true">*</span></label>
+            <textarea class="form-textarea" id="nachricht" name="nachricht" rows="6" required placeholder="Bitte schildern Sie kurz Ihre Situation. Alle Angaben sind vertraulich."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-check">
+              <input type="checkbox" name="datenschutz" required>
+              <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span aria-hidden="true">*</span></span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem">Terminanfrage absenden</button>
+          <p style="font-size:.78rem;margin-top:1rem;color:var(--muted)">* Pflichtfelder. Ihre Daten werden nicht an Dritte weitergegeben.</p>
+        </form>
+      </div>
+
+      <!-- RIGHT: CONTACT INFO -->
+      <div data-animate data-delay="1">
+        <div class="gold-rule"></div>
+        <p class="section-label" style="margin-bottom:.5rem">Kontaktdaten</p>
+        <h2 style="font-size:clamp(1.5rem,2.5vw,2rem);color:var(--navy);margin-bottom:2rem">So erreichen Sie uns</h2>
+
+        <!-- Info Cards -->
+        <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem">
+
+          <div style="padding:1.25rem 1.5rem;border-left:3px solid var(--gold);background:var(--surface)">
+            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-weight:500;margin-bottom:.6rem">Adresse</p>
+            <p style="font-weight:500;color:var(--navy);margin-bottom:.2rem">Lauenburg &amp; Kollegen Rechtsanwälte</p>
+            <p style="color:var(--muted);font-size:.9rem">Winterhuder Weg 6, 22085 Hamburg</p>
+          </div>
+
+          <div style="padding:1.25rem 1.5rem;border-left:3px solid var(--gold);background:var(--surface)">
+            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-weight:500;margin-bottom:.6rem">Telefon</p>
+            <p style="margin-bottom:.2rem"><a href="tel:+4940000000" style="font-weight:500;color:var(--navy)">+49 40 000 000 00</a></p>
+            <p style="color:var(--muted);font-size:.85rem">Notfall-Erreichbarkeit 24/7</p>
+          </div>
+
+          <div style="padding:1.25rem 1.5rem;border-left:3px solid var(--gold);background:var(--surface)">
+            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-weight:500;margin-bottom:.6rem">E-Mail</p>
+            <p><a href="mailto:kanzlei@lauenburg-kollegen.de" style="font-weight:500;color:var(--navy)">kanzlei@lauenburg-kollegen.de</a></p>
+          </div>
+
+          <div style="padding:1.25rem 1.5rem;border-left:3px solid var(--gold);background:var(--surface)">
+            <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-weight:500;margin-bottom:.6rem">Öffnungszeiten</p>
+            <p style="color:var(--navy);font-size:.9rem;margin-bottom:.2rem">Mo – Do: <strong>09:00 – 18:00 Uhr</strong></p>
+            <p style="color:var(--navy);font-size:.9rem;margin-bottom:.4rem">Fr: <strong>09:00 – 16:00 Uhr</strong></p>
+            <p style="color:var(--muted);font-size:.82rem">Termine außerhalb der Bürozeiten nach Vereinbarung möglich.</p>
+          </div>
+
+        </div>
+
+        <!-- Map placeholder -->
+        <div style="background:var(--navy);aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;margin-bottom:.75rem">
+          <p style="color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;text-align:center;padding:0 1.5rem">Winterhuder Weg 6 · 22085 Hamburg</p>
+          <a href="https://maps.google.com/?q=Winterhuder+Weg+6+Hamburg" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:.78rem">In Google Maps öffnen ↗</a>
+        </div>
+
+        <!-- Transit -->
+        <div style="padding:1.1rem 1.5rem;background:var(--surface);font-size:.85rem;line-height:1.75;color:var(--muted)">
+          <p style="font-weight:500;color:var(--navy);margin-bottom:.4rem">Anreise &amp; Parken</p>
+          <p><strong>U-Bahn:</strong> U3 Mundsburg (5 Gehminuten)</p>
+          <p><strong>Bus:</strong> Linien 25, 27 – Haltestelle Mundsburg</p>
+          <p style="margin-top:.35rem"><strong>Parken:</strong> Öffentliche Stellplätze am Winterhuder Weg und Tiefgarage Mundsburg-Center.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     BLOG PREVIEW
+═══════════════════════════════════════════════════════════════ -->
+<section class="section section--surface">
+  <div class="container">
+    <div class="gold-rule" data-animate></div>
+    <p class="section-label" data-animate data-delay="1">Wissen &amp; Orientierung</p>
+    <div class="blog-grid" style="margin-top:3rem">
+
+      <article class="blog-card" data-animate>
+        <div class="blog-img">
+          <img src="img/kanzlei1.png" alt="Schweigen bei der Polizei">
+          <span class="blog-cat blog-cat--gold">Tipps</span>
+        </div>
+        <div class="blog-body">
+          <p class="blog-date">12. März 2025</p>
+          <h3 class="blog-title">Schweigen bei der Polizei: Ihr wichtigstes Recht</h3>
+          <p class="blog-excerpt">Als Beschuldigter müssen Sie bei einer polizeilichen Vernehmung keine Aussage machen. Das Schweigerecht kann den entscheidenden Unterschied ausmachen.</p>
+          <a href="blog.html" class="blog-more arrow-link">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-animate data-delay="1">
+        <div class="blog-img">
+          <img src="img/kanzlei3.png" alt="Scheidungsunterhalt 2025">
+          <span class="blog-cat">Familienrecht</span>
+        </div>
+        <div class="blog-body">
+          <p class="blog-date">22. Februar 2025</p>
+          <h3 class="blog-title">Scheidungsunterhalt 2025: Was hat sich geändert?</h3>
+          <p class="blog-excerpt">Die Düsseldorfer Tabelle 2025 bringt neue Bedarfssätze und veränderte Einkommensgruppen. Auswirkungen auf laufende und neue Unterhaltsverfahren.</p>
+          <a href="blog.html" class="blog-more arrow-link">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-animate data-delay="2">
+        <div class="blog-img">
+          <img src="img/kanzlei1.png" alt="Hausdurchsuchung">
+          <span class="blog-cat">Strafrecht</span>
+        </div>
+        <div class="blog-body">
+          <p class="blog-date">14. Februar 2025</p>
+          <h3 class="blog-title">Hausdurchsuchung: So verhalten Sie sich richtig</h3>
+          <p class="blog-excerpt">Eine Wohnungsdurchsuchung ist ein massiver Eingriff in Ihre Privatsphäre. Was Sie unterschreiben dürfen, was nicht – und wann Sie sofort Hilfe brauchen.</p>
+          <a href="blog.html" class="blog-more arrow-link">Weiterlesen →</a>
+        </div>
+      </article>
+
+    </div>
+    <div style="text-align:center;margin-top:3rem" data-animate>
+      <a href="blog.html" class="arrow-link">Alle Beiträge lesen →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CTA — NOTFALL
+═══════════════════════════════════════════════════════════════ -->
+<section class="section section--navy grain cta-strip">
+  <div class="container">
+    <div class="cta-content" data-animate>
+      <p class="section-label">Sofortiger Beistand</p>
+      <span class="gold-rule gold-rule--med" style="margin:1.25rem auto 2rem;display:block"></span>
+      <h2 style="font-size:clamp(1.75rem,3.5vw,3rem);margin-bottom:1.25rem">Notfall? Wir sind rund um die Uhr erreichbar.</h2>
+      <p style="font-size:.95rem;color:rgba(255,255,255,.6);line-height:1.85;max-width:34rem;margin:0 auto">Bei Festnahmen, laufenden Durchsuchungen oder anderen dringenden Situationen erreichen Sie uns jederzeit. Schweigen Sie gegenüber der Polizei und rufen Sie sofort an.</p>
+      <div class="cta-btns" data-animate data-delay="2">
+        <a href="tel:+4940000000" class="btn btn-gold">+49 40 000 000 00</a>
+        <a href="mailto:kanzlei@lauenburg-kollegen.de" class="btn btn-ghost">Per E-Mail schreiben</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
